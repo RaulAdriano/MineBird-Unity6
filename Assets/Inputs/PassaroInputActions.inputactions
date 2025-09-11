@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "PassaroInputActions",
+    "maps": [
+        {
+            "name": "Jogador",
+            "id": "0a23d2b1-6815-4d94-b458-f79e74421931",
+            "actions": [
+                {
+                    "name": "Saltar",
+                    "type": "Button",
+                    "id": "af373612-b996-4bd9-a4ee-62bf026cce8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c0415408-3204-4651-a812-6178e78390e3",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Saltar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74ca07bd-d1fb-4369-945e-a18738681fb0",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Saltar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
