@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class MovimentoPassaro : MonoBehaviour
 {
     Rigidbody rb;
-    public float forcaSalto = 2f;
-    public float velocidadeFrente = 5f;
+    [SerializeField] private float forcaSalto = 5f;
+    [SerializeField] private float velocidadeFrente = 4f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
