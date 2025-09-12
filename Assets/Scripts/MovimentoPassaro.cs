@@ -5,7 +5,7 @@ public class MovimentoPassaro : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] private float forcaSalto = 5f;
-    [SerializeField] private float velocidadeFrente = 4f;
+    [SerializeField] private float velocidadeFrente = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
