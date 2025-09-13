@@ -16,7 +16,9 @@ public class Pontuacao : MonoBehaviour
             pontosText.text = pontos.ToString();
             pontuacaoAudioSource.Play();
 
-            Destroy(other.gameObject);            
+            Destroy(other.gameObject);
+
+            Time.timeScale += 0.01f;
         }
     }
 }

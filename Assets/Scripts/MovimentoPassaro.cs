@@ -8,10 +8,14 @@ public class MovimentoPassaro : MonoBehaviour
     public float velocidadeFrente = 3f;
     public AudioSource saltarAudioSource;
 
+    private bool partidaIniciada;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody> ();    
+        rb = GetComponent<Rigidbody> ();
+
+        Time.timeScale = 0;
         
     }
 
@@ -19,6 +23,12 @@ public class MovimentoPassaro : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
+            if (!partidaIniciada)
+            {
+                partidaIniciada = true;
+                Time.timeScale = 1;
+            }
+
             saltarAudioSource.Play ();
             rb.linearVelocity = new Vector3 (rb.linearVelocity.x, forcaSalto, 0);
         }
