@@ -14,7 +14,7 @@ public class BolaFogo : MonoBehaviour
         }
         else
         {
-            Instantiate(explosaoGenerica, collision.transform.position, collision.transform.rotation);
+            Instantiate(explosaoGenerica, transform.position, transform.rotation);
         }
             Destroy(gameObject);
     }

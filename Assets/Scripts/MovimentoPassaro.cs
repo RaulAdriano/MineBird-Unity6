@@ -4,8 +4,9 @@ using UnityEngine.InputSystem;
 public class MovimentoPassaro : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] private float forcaSalto = 5f;
-    [SerializeField] private float velocidadeFrente = 3f;
+    public float forcaSalto = 5f;
+    public float velocidadeFrente = 3f;
+    public AudioSource saltarAudioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,6 +19,7 @@ public class MovimentoPassaro : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
+            saltarAudioSource.Play ();
             rb.linearVelocity = new Vector3 (rb.linearVelocity.x, forcaSalto, 0);
         }
     }
