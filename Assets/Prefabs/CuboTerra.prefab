@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7049625273145519800}
   m_Layer: 0
   m_Name: CuboTerra
-  m_TagString: Untagged
+  m_TagString: Terra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

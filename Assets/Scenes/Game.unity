@@ -127,6 +127,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 85893061}
     m_Modifications:
+    - target: {fileID: 28150680531380517, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520970016695540432, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052239335898469072, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508633557529769453, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517862670407654756, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220600991042803642, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4380982385506044202, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -167,9 +191,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4685942524642508598, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773386594267457806, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124722715740617501, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7644711824050822222, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
       propertyPath: m_Name
       value: Passaro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7644711824050822222, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562826606408766102, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775783317149770589, guid: 36d91edbe3300d944bc95191e10f124a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -188,10 +236,11 @@ GameObject:
   - component: {fileID: 85893065}
   - component: {fileID: 85893058}
   - component: {fileID: 85893066}
+  - component: {fileID: 85893068}
   - component: {fileID: 85893062}
   - component: {fileID: 85893064}
   - component: {fileID: 85893067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Passaro
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -304,6 +353,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: af373612-b996-4bd9-a4ee-62bf026cce8e
     m_ActionName: 'Jogador/Saltar[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 85893068}
+        m_TargetAssemblyTypeName: DisparoBolaFogo, Assembly-CSharp
+        m_MethodName: LancarBolaFogo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: db8bfcae-c67f-429f-afd5-aada59909007
+    m_ActionName: 'Jogador/BolaFogo[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Jogador
@@ -349,6 +414,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOver
   gameOverPanel: {fileID: 1761215510}
+--- !u!114 &85893068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85893057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e64194e50a1c240a30f3880e6f12a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisparoBolaFogo
+  bolaFogo: {fileID: 5146157464750812048, guid: 1dcf22140339c0e4ea29aacb4391c3a5, type: 3}
 --- !u!1 &179007945
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +748,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
